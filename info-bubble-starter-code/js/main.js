@@ -14,15 +14,17 @@ var salesClickHandler = function() {
 	}
 };
 
-sales1.on('click', salesClickHandler);
+sales.on('click', salesClickHandler);
 
-var sales = $('.sales');
 
-var salesDetails1 = $('.sales__details')
 
-var salesClickHandler = function() {
+var sales1 = $('.sales1');
+
+var salesDetails1 = $('.sales__details1')
+
+var sales1ClickHandler = function() {
 	
-	var isActive = salesDetails.attr('data-state');
+	var isActive = salesDetails1.attr('data-state');
 	
 	if (isActive == 'active') {
 		salesDetails1.attr('data-state', 'inactive');
@@ -31,4 +33,8 @@ var salesClickHandler = function() {
 	}
 };
 
-sales1.on('click', salesClickHandler);
+sales1.on('click', sales1ClickHandler);
+
+
+
+
